@@ -13,7 +13,7 @@
 
 </style>
 <div class="well well-sm">
-	<marquee behavior="" truespeed="700" direction="">Halaman ini adalah untuk melihat progress Pencatatan Zakat secara Realtime.</marquee>
+	<marquee behavior="" truespeed="700" direction="">Halaman ini untuk melihat progress Pencatatan Zakat secara Realtime.</marquee>
 </div>
 <div class="container">
 	<div class="row">
@@ -24,7 +24,7 @@
 				</div>
 				<div class="panel-body">
 					<h1 align="center" class="zakat fontnya">0</h1> 
-					<h3><span class="kwintal"></span></h3>
+					<h3 align="center"><span class="kwintal"></span></h3>
 				</div>
 			</div>				
 		</div>
@@ -83,6 +83,7 @@
 				$(".infaq").html(msg.infaq);
 				$(".orang_zakat").html(msg.orang_zakat);
 				$(".orang_infaq").html(msg.orang_infaq);
+				$(".kwintal").html(msg.kwintal);
 			}
 		})
 	}

@@ -176,7 +176,8 @@ class C_client extends CI_Controller {
 						"zakat" => $jumlah_zakat." Kg",
 						"infaq" => "Rp. ".number_format($jumlah_infaq,0,',','.').",-",
 						"orang_zakat" => $jumlah_orang_zakat_fitrah,
-						'orang_infaq' => $jumlah_orang_infaq
+						'orang_infaq' => $jumlah_orang_infaq,
+						'kwintal' 	  => ($jumlah_zakat/100)." Kwintal"
 					);
 
 		echo json_encode($data);
