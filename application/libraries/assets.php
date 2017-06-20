@@ -12,7 +12,7 @@
 
  	public function get($dir)
  	{
- 		return "http://192.168.1.3/assets/".$dir;
+ 		return "http://localhost/assets/".$dir;
  	}
  }
  

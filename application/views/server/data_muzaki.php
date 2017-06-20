@@ -12,10 +12,10 @@
 					</tr>
 				</thead>
 				<tbody>
-					<?php $no = 1; foreach ($muzaki as $m): ?>
+					<?php $no = 1; foreach ($muzaki->result() as $m): ?>
 						<tr>
 							<td><?php echo $no++ ?></td>
-							<td><?php echo $m->nama ?></td>
+							<td><?php echo $m->nama_muzaki ?></td>
 						</tr>
 					<?php endforeach ?>
 				</tbody>

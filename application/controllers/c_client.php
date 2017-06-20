@@ -224,6 +224,14 @@ class C_client extends CI_Controller {
 		$this->cetak->stream('cetak_zakat.pdf', array('Attachment'=>0));
 	}
 
+
+	public function eksport_excel()
+	{
+		$data['data'] = $this->m_zakat->get_all('muzaki')->result();
+		$data['total'] = $this->db->query("SELECT COUNT(nama_muzaki) AS jum FROM muzaki")->row();
+
+		$this->load->view('eksport_excel', $data); 
+	}
 }
 
 /* End of file  */

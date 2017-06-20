@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "c_zakat";
+$route['default_controller'] = "c_client";
 $route['404_override'] = '';
 
 /**
