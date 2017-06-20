@@ -99,6 +99,12 @@ class M_zakat extends CI_Model {
 		
 	}
 
+	public function get_periode($table, $periode)
+	{
+		$this->db->where('id_periode', $periode);
+		return $this->db->get($table);
+	}
+
 	public function auto_number($table, $kolom, $lebar=0, $awalan=null)
 	{
 		$this->db->select($kolom);

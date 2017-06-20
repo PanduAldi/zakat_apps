@@ -60,14 +60,15 @@ class C_server extends CI_Controller {
 	 */
 	public function data_muzaki()
 	{
-		//$data = array(
-		//				"title" => "Data Muzaki",
-		//				"muzaki" => $this->m_zakat->get_all('muzaki')->result()
+		$data = array(
+						"title" => "Data Muzaki",
+						"muzaki" => $this->m_zakat->get_all('muzaki')
 					);
 	
-		//$this->template->template_server('server/data_muzaki', $data);
-		echo "Cooming Soon";
+		$this->template->template_server('server/data_muzaki', $data);
+		
 	}
+
 
 
 }
